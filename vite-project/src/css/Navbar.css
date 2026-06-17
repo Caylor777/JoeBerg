@@ -3,7 +3,7 @@
   padding-top: 20px;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 80%;
   /* Optional: Set max-width to the exact width of your banner image */
   /* max-width: 1000px; */
   margin: 0 auto;
@@ -33,6 +33,7 @@
   margin: 0;
   border-bottom: 1px solid var(--border);
   border-width: 2px;
+  border-radius: 2px;
 }
 
 .navbar-tabs li {
@@ -47,7 +48,7 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  color: #0E3F80;
+  color: var(--border);
   font-size: 24px;
   line-height: 1;
 }
@@ -58,8 +59,9 @@
   text-decoration: none;
   color: #333;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .navbar-tabs a:hover {
-  background-color: #e9ecef; /* Slight hover effect */
+  border-top: 2px solid var(--accent);
 }
