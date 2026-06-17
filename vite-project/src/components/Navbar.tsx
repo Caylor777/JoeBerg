@@ -4,7 +4,9 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-banner">
-        <img src="/banner.png" alt="Joe Berg Banner" />
+        <a href="#home">
+          <img src="/banner.png" alt="Joe Berg Banner" />
+        </a>
       </div>
       <ul className="navbar-tabs">
         <li><a href="#future-vision">JBS Future Vision</a></li>

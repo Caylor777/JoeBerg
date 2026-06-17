@@ -10,11 +10,17 @@
 
 .navbar-banner {
   width: 100%;
+  overflow: visible;
 }
 
 .navbar-banner img {
   width: 100%;
   display: block;
+  transition: transform 0.3s ease;
+}
+
+.navbar-banner img:hover {
+  transform: scale(1.03); /* Grows the image to 103% of its original size */
 }
 
 .navbar-tabs {
