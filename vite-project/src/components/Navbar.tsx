@@ -1,9 +1,19 @@
+import './Navbar.css';
+
 function Navbar() {
   return (
-    <div>
-      <img src="/banner.png" alt="Joe Berg Banner" />
-      
-    </div>
+    <nav className="navbar">
+      <div className="navbar-banner">
+        <img src="/banner.png" alt="Joe Berg Banner" />
+      </div>
+      <ul className="navbar-tabs">
+        <li><a href="#future-vision">JBS Future Vision</a></li>
+        <li><a href="#calendar">Seminar Calendar</a></li>
+        <li><a href="#story">The Joe Berg Seminars Story</a></li>
+        <li><a href="#guidelines">Guidelines for Participation</a></li>
+        <li><a href="#more">more..</a></li>
+      </ul>
+    </nav>
   );
 }
 

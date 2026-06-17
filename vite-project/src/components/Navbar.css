@@ -1,0 +1,45 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /* Optional: Set max-width to the exact width of your banner image */
+  /* max-width: 1000px; */
+  margin: 0 auto;
+}
+
+.navbar-banner {
+  width: 100%;
+}
+
+.navbar-banner img {
+  width: 100%;
+  display: block;
+}
+
+.navbar-tabs {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #f8f9fa; /* Light background for the tabs */
+}
+
+.navbar-tabs li {
+  flex: 1; /* Makes each tab take up an equal amount of space */
+  text-align: center;
+}
+
+.navbar-tabs a {
+  display: block;
+  padding: 15px 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.navbar-tabs a:hover {
+  background-color: #e9ecef; /* Slight hover effect */
+}
