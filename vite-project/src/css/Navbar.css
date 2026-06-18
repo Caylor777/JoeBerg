@@ -88,12 +88,15 @@
   padding: 40px;
   border-radius: 12px;
   position: relative;
-  min-width: 300px;
+  width: 100%;
+  max-width: 400px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.2);
   color: black;
+  display: flex;
+  flex-direction: column;
 }
 
-.login-form button {
+.login-form > button {
   position: absolute; 
   top: 15px;
   right: 15px;
@@ -105,6 +108,6 @@
   transition: color 0.2s ease;
 }
 
-.login-form button:hover {
+.login-form > button:hover {
   color: darkred;
 }
