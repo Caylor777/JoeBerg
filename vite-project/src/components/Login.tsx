@@ -1,26 +1,23 @@
-import React, { FormEvent } from 'react';
-import useState from 'react';
-// 1. Define types for your hardcoded database
+import { useState } from 'react';
+import type { SyntheticEvent } from 'react';
 interface UserDatabase {
   [key: string]: string;
 }
 
 function Login() {
-  // 2. Hardcoded accounts for your tests
   const testUsers: UserDatabase = {
     admin: "admin123",
     user1: "password55",
   };
 
-  // 3. Setup React state to track inputs and messages
   const [username, setUsername] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const [message, setMessage] = useState<string>('');
   const [isSuccess, setIsSuccess] = useState<boolean | null>(null);
 
-  // 4. Handle form submission
-  const handleSubmit = (event: FormEvent<HTMLFormElement>): void => {
-    event.preventDefault(); // Prevents page reload
+  // CHANGED: Use SyntheticEvent instead of FormEvent
+  const handleSubmit = (event: SyntheticEvent): void => {
+    event.preventDefault(); 
 
     if (testUsers[username] && testUsers[username] === password) {
       setMessage(`Login Successful! Welcome, ${username}.`);
@@ -65,7 +62,6 @@ function Login() {
         </button>
       </form>
 
-      {/* 5. Conditional message feedback rendering */}
       {message && (
         <p style={{ marginTop: '15px', fontWeight: 'bold', color: isSuccess ? 'green' : 'red' }}>
           {message}
