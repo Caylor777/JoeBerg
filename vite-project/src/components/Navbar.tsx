@@ -21,7 +21,6 @@ function Navbar() {
         <li>
           <a href="#login" onClick={(e) => { e.preventDefault(); setIsLoginOpen(true); }}>Login</a>
         </li>
-        <li><a href="#more">more..</a></li>
       </ul>
 
       {isLoginOpen && (
