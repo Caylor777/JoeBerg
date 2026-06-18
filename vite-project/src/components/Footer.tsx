@@ -10,7 +10,7 @@ function Footer() {
         <a href="#historical">Joe Berg Historical Files</a>
         <a href="#contact-archive">240203 Contact (archive)</a>
         <a href="#spring-calendar">2025-1 Spring Seminar Calendar</a>
-        <a href="#pfan">The Berg Plan</a>
+        <a href="#plan">The Berg Plan</a>
         <a href="#calendar-archive">Seminar Calendar - Archive 260124</a>
       </div>
       <p>&trade; {new Date().getFullYear()} The Joe Berg Seminars. All rights reserved.</p>
