@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import type { SyntheticEvent } from 'react';
+import '../css/Login.css';
+
 interface UserDatabase {
   [key: string]: string;
 }
@@ -29,44 +31,46 @@ function Login() {
   };
 
   return (
-    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-      <h1>Login</h1>
+    <div className="login-container">
+      <h2 className="login-header">Login</h2>
       
-      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', width: '250px', gap: '10px' }}>
-        <div>
-          <label htmlFor="username" style={{ display: 'block' }}>Username:</label>
+      <form onSubmit={handleSubmit} className="login-form-inner">
+        <div className="form-group">
+          <label htmlFor="username">Username</label>
           <input
             type="text"
             id="username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             required
-            style={{ width: '100%', padding: '6px' }}
+            className="login-input"
+            placeholder="Enter your username"
           />
         </div>
 
-        <div>
-          <label htmlFor="password" style={{ display: 'block' }}>Password:</label>
+        <div className="form-group">
+          <label htmlFor="password">Password</label>
           <input
             type="password"
             id="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
-            style={{ width: '100%', padding: '6px' }}
+            className="login-input"
+            placeholder="Enter your password"
           />
         </div>
 
-        <button type="submit" style={{ padding: '8px', cursor: 'pointer' }}>
-          Submit Test Login
+        {message && (
+          <p className={`login-message ${isSuccess ? 'success' : 'error'}`}>
+            {message}
+          </p>
+        )}
+
+        <button type="submit" className="login-button">
+          Sign In
         </button>
       </form>
-
-      {message && (
-        <p style={{ marginTop: '15px', fontWeight: 'bold', color: isSuccess ? 'green' : 'red' }}>
-          {message}
-        </p>
-      )}
     </div>
   );
 }
