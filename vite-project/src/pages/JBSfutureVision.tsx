@@ -1,6 +1,9 @@
+import Navbar from '../components/Navbar';
+
 function JBSfutureVision() {
   return (
     <div className="home-page">
+      <Navbar />
       <h1>The Challenges</h1>
       <p>Humanity has always faced challenges. In the hyper-connected technological world of today, however, dealing with them is more complicated than it used to be even a few decades ago. Of the many challenges the leaders and citizens of the present and future will face, some, like climate change, are already happening (1). Human nature being what it is, wars will be something to deal with for the foreseeable future. In a world where global travel is easy and relatively cheap, pandemics and epidemics are almost certain. Then there are challenges that are much less likely but would precipitate epochal changes if they were to occur, like an impending large asteroid impact or the discovery of intelligent extraterrestrial life. And there could be others that we cannot even imagine now. But there are two that, in our view, are the most important – and the most dangerous: misinformation (along with its more toxic cousin disinformation) and artificial intelligence.</p>
       <br/>
