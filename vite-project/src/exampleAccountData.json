@@ -1,0 +1,19 @@
+{
+	"users": [
+		{
+			"username": "user1",
+			"seminars": [
+				{ "date": "2026-06-01", "attended": true },
+				{ "date": "2026-05-15", "attended": false },
+				{ "date": "2026-04-20", "attended": true }
+			]
+		},
+		{
+			"username": "admin",
+			"seminars": [
+				{ "date": "2026-06-10", "attended": true },
+				{ "date": "2026-03-18", "attended": false }
+			]
+		}
+	]
+}
