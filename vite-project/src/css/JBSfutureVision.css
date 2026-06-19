@@ -60,6 +60,7 @@
 
 .Table-of-Contents li {
   margin-bottom: 12px;
+  text-align: left;
 }
 
 .Table-of-Contents a {
@@ -94,6 +95,7 @@
 
 .home-page ul li, .home-page ol:not(.sources) li {
   margin-bottom: 0.8em;
+  text-align: left;
 }
 
 /* Sources list styling */
@@ -111,6 +113,7 @@
 .sources li {
   margin-bottom: 15px;
   line-height: 1.5;
+  text-align: left;
 }
 
 .sources a {
