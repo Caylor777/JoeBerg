@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import type { SyntheticEvent } from 'react';
 import '../css/Login.css';
-
+import { useNavigate } from 'react-router-dom';
 interface UserDatabase {
   [key: string]: string;
 }
@@ -13,7 +13,7 @@ function Login() {
     admin: "admin123",
     user1: "password55",
   });
-
+  const navigate = useNavigate();
   // UI State: Toggle between Login and Create Account modes
   const [isLoginView, setIsLoginView] = useState<boolean>(true);
 
@@ -34,6 +34,7 @@ function Login() {
       if (testUsers[username] && testUsers[username] === password) {
         setMessage(`Login Successful! Welcome back, ${username}.`);
         setIsSuccess(true);
+        navigate('/account');
       } else {
         setMessage('Invalid username or password.');
         setIsSuccess(false);
