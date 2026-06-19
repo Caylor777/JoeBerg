@@ -105,14 +105,14 @@
 
 .navbar-account-menu {
   position: absolute;
-  top: calc(100% + 4px);
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-  padding: 4px 0;
+  padding: 0;
   min-width: 160px;
   width: max-content;
   z-index: 20;
