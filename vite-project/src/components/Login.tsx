@@ -40,15 +40,11 @@ function Login({ onLoginSuccess }: LoginProps) {
       if (testUsers[username] && testUsers[username] === password) {
         setMessage(`Login Successful! Welcome back, ${username}.`);
         setIsSuccess(true);
-        localStorage.setItem('currentUser', username);
-        localStorage.setItem('loggedin', 'true');
         onLoginSuccess?.(username);
         navigate('/account');
       } else if (adminUsers[username] && adminUsers[username] === password) {
         setMessage(`Login Successful! Welcome back, ${username}.`);
         setIsSuccess(true);
-        localStorage.setItem('currentUser', username);
-        localStorage.setItem('loggedin', 'true');
         onLoginSuccess?.(username);
         navigate('/dashboard');
       } else {

@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../css/Navbar.css';
-
+import { useNavigate } from 'react-router-dom';
 import Login from './Login';
 
 function Navbar() {
+  const navigate = useNavigate();
   const [isLoginOpen, setIsLoginOpen] = useState(false);
   const [isAccountMenuOpen, setIsAccountMenuOpen] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem('loggedin') === 'true');
@@ -17,6 +18,7 @@ function Navbar() {
     setIsLoggedIn(false);
     setCurrentUser(null);
     setIsAccountMenuOpen(false);
+    navigate('/home');
   };
 
   const handleLoginSuccess = (username: string) => {
