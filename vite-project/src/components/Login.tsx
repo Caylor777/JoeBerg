@@ -9,7 +9,7 @@ interface UserDatabase {
 function Login() {
   // Moved testUsers into state so that when you "create" an account,
   // it actually saves for the duration of your session to test it out.
-  const [testUsers, setTestUsers] = useState<UserDatabase>({
+  const [testUsers,] = useState<UserDatabase>({
     admin: "admin123",
     user1: "password55",
   });
@@ -40,21 +40,11 @@ function Login() {
       }
     } else {
       // --- SIGN UP LOGIC ---
-      if (testUsers[username]) {
-        setMessage('Username already exists. Please choose another.');
-        setIsSuccess(false);
-      } else {
-        // Add the new user to our local "database" state
-        setTestUsers(prevUsers => ({
-          ...prevUsers,
-          [username]: password
-        }));
-        setMessage(`Account created successfully! Welcome, ${username}.`);
-        setIsSuccess(true);
-        
-        // Optional: Automatically switch them back to the login view after a second
-        // setTimeout(() => setIsLoginView(true), 2000); 
-      }
+      // For now, just show confirmation that the email was submitted
+      // In the future, this will check against pre-approved emails
+      setMessage(`Account creation link sent to ${email}. Please check your email.`);
+      setIsSuccess(true);
+      setEmail('');
     }
   };
 
@@ -74,7 +64,7 @@ function Login() {
       
       <form onSubmit={handleSubmit} className="login-form-inner">
         
-        {/* Conditionally render the Email field ONLY if we are in Sign Up view */}
+        {/* Email field for Sign Up view */}
         {!isLoginView && (
           <div className="form-group">
             <label htmlFor="email">Email</label>
@@ -90,31 +80,36 @@ function Login() {
           </div>
         )}
 
-        <div className="form-group">
-          <label htmlFor="username">Username</label>
-          <input
-            type="text"
-            id="username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            required
-            className="login-input"
-            placeholder="Enter your username"
-          />
-        </div>
+        {/* Username and Password fields for Login view */}
+        {isLoginView && (
+          <>
+            <div className="form-group">
+              <label htmlFor="username">Username</label>
+              <input
+                type="text"
+                id="username"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                required
+                className="login-input"
+                placeholder="Enter your username"
+              />
+            </div>
 
-        <div className="form-group">
-          <label htmlFor="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-            className="login-input"
-            placeholder="Enter your password"
-          />
-        </div>
+            <div className="form-group">
+              <label htmlFor="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+                className="login-input"
+                placeholder="Enter your password"
+              />
+            </div>
+          </>
+        )}
 
         {message && (
           <p className={`login-message ${isSuccess ? 'success' : 'error'}`}>
@@ -123,7 +118,7 @@ function Login() {
         )}
 
         <button type="submit" className="login-button">
-          {isLoginView ? 'Sign In' : 'Sign Up'}
+          {isLoginView ? 'Sign In' : 'Create an Account'}
         </button>
       </form>
 
@@ -145,7 +140,7 @@ function Login() {
             padding: 0
           }}
         >
-          {isLoginView ? 'Sign Up' : 'Log In'}
+          {isLoginView ? 'Create an Account' : 'Log In'}
         </button>
       </div>
 
