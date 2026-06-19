@@ -70,9 +70,9 @@
   letter-spacing: normal;
   text-transform: none;
   white-space: nowrap;
-  border-top: 2px solid transparent;
   background: none;
   border: none;
+  border-top: 2px solid transparent;
   cursor: pointer;
   line-height: 1.4;
   appearance: none;
