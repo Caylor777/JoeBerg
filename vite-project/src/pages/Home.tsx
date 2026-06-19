@@ -1,4 +1,5 @@
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import '../css/Home.css';
 
 import donationQR from '/DonationQR.svg';
@@ -25,6 +26,7 @@ function Home() {
           </a>
         </section>
       </div>
+      <Footer />
     </div>
   );
 }
