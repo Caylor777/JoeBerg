@@ -1,12 +1,36 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import '../css/JBSfutureVision.css';
 
 function JBSfutureVision() {
   return (
     <div className="home-page">
       <Navbar />
+        
+      <div className="JBS-Future-Vision">
+        <h1>The Joe Berg Seminars Vision for the Future</h1>
+        <h3>Fostering learning and critical thinking in young people building a better future for all</h3>
+        <p>The Joe Berg Seminars is an invitation-only honor society for high school sophomores, juniors, and seniors, in operation since 1960. Each class of Joe Berg Scholars includes many of the best and brightest students from public and private high schools in Duval County and neighboring counties in northeast Florida. It is likely that many of these students will become leaders who will decide how to handle the challenges presented by a complex and fractious world. Ordinary citizens will have to deal with these challenges in one way or another as well. Here we present a vision of how an expanded version of The Joe Berg Seminars might in some small way help both future leaders and ordinary citizens cope with those challenges.</p>
+      </div>
 
-      <div className="The-Challenges">
+      <br/>
+
+      <div className="Table-of-Contents">
+        <h2>Table of Contents</h2>
+        <ol>
+          <li><a href="#the-challenges">The Challenges</a></li>
+          <li><a href="#meeting-the-challenges">Meeting the Challenges</a></li>
+          <li><a href="#brief-history">Brief History of The Joe Berg Seminars Concept</a></li>
+          <li><a href="#about-the-program">About The Joe Berg Seminars Program</a></li>
+          <li><a href="#mentorship-program">The Jacksonville Joe Berg Seminars Mentorship Program</a></li>
+          <li><a href="#middle-school-clubs">Joe Berg Middle School Clubs</a></li>
+          <li><a href="#dissemination">Dissemination of The Joe Berg Seminars Concept Beyond the Local Area</a></li>
+        </ol>
+      </div>
+
+      <br/>
+
+      <div id="the-challenges" className="The-Challenges">
         <h1>The Challenges</h1>
         <p>Humanity has always faced challenges. In the hyper-connected technological world of today, however, dealing with them is more complicated than it used to be even a few decades ago. Of the many challenges the leaders and citizens of the present and future will face, some, like climate change, are already happening (1). Human nature being what it is, wars will be something to deal with for the foreseeable future. In a world where global travel is easy and relatively cheap, pandemics and epidemics are almost certain. Then there are challenges that are much less likely but would precipitate epochal changes if they were to occur, like an impending large asteroid impact or the discovery of intelligent extraterrestrial life. And there could be others that we cannot even imagine now. But there are two that, in our view, are the most important – and the most dangerous: misinformation (along with its more toxic cousin disinformation) and artificial intelligence.</p>
         <br/>
@@ -27,7 +51,7 @@ function JBSfutureVision() {
 
       <br/>
 
-      <div className="Meeting-the-Challenges">
+      <div id="meeting-the-challenges" className="Meeting-the-Challenges">
         <h1>Meeting the Challenges</h1>
         <ul>To evaluate the truthfulness and the value of a particular piece of information you come across, you should ask yourself four things:
             <li>Does the information make sense?</li>
@@ -47,7 +71,7 @@ function JBSfutureVision() {
         
       <br/>
 
-      <div id="Brief-History" className="Brief-History">
+      <div id="brief-history" className="Brief-History">
         <h1>Brief History of The Joe Berg Seminars Concept</h1>
         <p>The Joe Berg Seminars concept originated in 1955 as a program for bright science students at the Niles Township Community High School in Skokie, Illinois.  It was the brainchild of Jacob W. Shapiro, a chemist who had established a similar program more than a decade before as a high school science teacher in Columbia, Tennessee.  Each student in the program received personalized mentoring on their science research projects from science professionals in the community, and those same science professionals presented periodic evening seminars to all the students in the program.  One of the students in the program was the grandson of Joseph Berg, a wealthy Chicago trucking parts manufacturer.  Berg was so impressed with the program that in 1957 he established the Joe Berg Foundation and supplied it with a recurring annual budget of $75,000 (equivalent to more than $800,000 in today's money!) to enable Shapiro to spread his seminar model around the country (8).</p>
         <p>Demand for the Joe Berg Foundation's model increased when the launch of Sputnik I in October of 1957 set the “Space Race” into high gear, and Shapiro traveled far and wide as program coordinator to help communities establish their own seminar programs (9).  By the mid-1960s, according to Joseph Berg’s New York Times obituary (10), there were more than 700 science seminar programs in operation in the US and Canada.  Our program, The Joe Berg Seminars, is the descendant of one of those.  For whatever reason – perhaps partly because American astronauts landing on the Moon several times between 1969 and 1972 seemed to have “won” the Space Race – the number of programs diminished over time.  Now there are only two remaining that we know of, ours and one at Wachusett Regional High School in Holden, Massachusetts.</p>
@@ -69,7 +93,7 @@ function JBSfutureVision() {
 
       <br/>
 
-      <div className="About-Program">
+      <div id="about-the-program" className="About-Program">
         <h1>About The Joe Berg Seminars Program</h1>
         <p>Members of Jacksonville's Southside Kiwanis Club brought the Joe Berg Foundation's concept to Jacksonville after hearing about it in a presentation on the Joe Berg program, possibly by Jacob W. Shapiro, at a Kiwanis International Convention in Chicago in 1958.  The Southside Kiwanis Club introduced the concept to the Duval County School Board, and the school board adopted it, but broadened the reach of the program by offering the seminars without the post-seminar mentoring in the original Joe Berg Foundation design.  This made it possible for gifted students from multiple schools to attend seminars presented at a single location, rather than having the seminars presented at each individual school.  The program, known then as the Joe Berg Society, was launched in 1960 with a Science Seminar series.  Students were nominated by their teachers and guidance counselors and tested for admission into the two-year program in the fall of their sophomore year, and newly admitted Joe Berg Scholars began attending seminars in the spring of their sophomore year.  They continued attending seminars, with summers off, through the fall of their senior year.  In the spring of their senior year, the Southside Kiwanis Club held a graduation banquet for the Scholars.  The success and popularity of the program led to a Humanities Seminar series being introduced alongside the Science series in 1963.  Over the decades since, the name of the program has changed from the Joe Berg Society to the Jacksonville Joe Berg Seminars and finally to its current name, The Joe Berg Seminars.</p>
         <p>Support for the program came from the Duval County School Board and the Southside Kiwanis Club until 2000, when the University of North Florida (UNF) took over.  In 2008, cuts in the state university system budget due to the financial crisis of 2007-2008 meant that UNF was no longer able to provide financial support, but facilities support continued.  Since 2008, our financial support has come from individual and corporate donations to our tax-exempt UNF Foundation account.</p>
@@ -79,7 +103,7 @@ function JBSfutureVision() {
 
       <br/>
 
-      <div className="Jax-Joe-Berg-Seminars-Mentorship-Program">
+      <div id="mentorship-program" className="Jax-Joe-Berg-Seminars-Mentorship-Program">
         <h1>The Jacksonville Joe Berg Seminars Mentorship Program</h1>
         <p>The <a href="#Brief-History">original design</a> of the Joe Berg Foundation called for the student members to attend periodic seminars given by professional scientists from their community, like our program, but the students also received help from those scientists with their science research projects.  The assistance might have simply been advice given before or after the seminars.  But it sometimes went beyond this, with students gaining access to equipment in industrial or academic research laboratories that they would never have had in their high school.  Some of these collaborations even resulted in published papers!  For example, at Niles Township High School, where the Joe Berg Seminars concept began, 15-year-old Ed Pollock teamed up with his mentor, a biologist at G.D. Searle, to do research that was published in The Anatomical Record in 1957 (12).</p>
         <p>We are not planning to institute that aspect of the program here in Jacksonville.  But we are now encouraging speakers to consider mentoring interested Scholars, and we are encouraging interested Scholars to ask speakers if they are willing to mentor them.  The nature of the mentorship is up to the mentor.  It could range from the speaker merely allowing the Scholar to shadow them as they go about doing their work to allowing the Scholar to be actively involved in the work.  The idea is to give our Scholars a taste of what it is like to work in the speaker's creative field, and to give the speaker an extra pair of hands - and an extra brain - to help with their work.  The Scholars are among the brightest students at their schools and would likely contribute to the speaker's work in a positive way.</p>
@@ -91,7 +115,7 @@ function JBSfutureVision() {
 
       <br/>
 
-      <div className="Middle-School-Clubs">
+      <div id="middle-school-clubs" className="Middle-School-Clubs">
         <h1>Joe Berg Middle School Clubs</h1>
         <p>The middle school years are challenging for most young people.  Middle schoolers are no longer exactly children, but not quite yet adolescents.  Hormones are beginning to rage. Their brains are changing rapidly.  They are surrounded by new peers, and the social pressures that come with that are exacerbated by social media.  The result of all of this is that they will tend to gravitate toward a group of like-minded peers with similar interests, and this could be a good thing or a bad thing.  Depending on the other students they associate with, their lives can take a turn in a positive or a negative direction.  We believe Joe Berg Middle School Clubs could help steer middle schoolers in the direction of a love of learning and critical thinking that would help them to make a positive contribution to society.</p>
         <ul>The clubs would be modeled on The Joe Berg Seminars high school program, with some important differences:
@@ -105,7 +129,7 @@ function JBSfutureVision() {
 
       <br/>
 
-      <div className="JBS-Concept-Beyond-the-Local-Area">
+      <div id="dissemination" className="JBS-Concept-Beyond-the-Local-Area">
         <h1>Dissemination of The Joe Berg Seminars Concept Beyond the Local Area</h1>
         <p>We believe The Joe Berg Seminars is an important and unique program, providing great value to our Scholars and to our community, and we think programs like it would contribute to a better future for all.  We would like to see similar programs established in other communities throughout our local area, our nation, and the world.  Our plan is to create a how-to brochure and make it available to any communities that are interested.  Those communities could follow the seminar model of The Joe Berg Seminars by just holding seminars.  They could add in a mentorship program like our Phase 2.  They could even go back to the original idea still followed by the program at Wachusett Regional High School with individualized assistance on research projects and occasional seminars.  It would be up to each community.  But if a community implements any of these designs it would benefit its students, the community itself, and beyond.</p>
         <p>This is of course a big task and a bit of pie in the sky, with much to do before it can commence.  But Jacob W. Shapiro and the Joe Berg Foundation did it more than 60 years ago on the North American scale.  With sufficient funding and the right personnel, we could do it again on a much larger scale.  And we believe the world would be a better place if we succeed.</p>
