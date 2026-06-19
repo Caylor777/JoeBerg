@@ -15,15 +15,18 @@ function Home() {
         </section>
 
         <section className="donation-section">
-          <div className="donation-text">
-            <a href="/donate">
-              <h2>Support us with your tax-deductible donation!</h2>
+          <div className="donation-section-content">
+            <div className="donation-text">
+              <a href="/donate">
+                <h2>Support us with your tax-deductible donation!</h2>
+              </a>
+              <p>Joe Berg Scholars pay nothing to be members of The Joe Berg Seminars, and speakers volunteer for no compensation.  Individual and corporate donations support our work to maintain our existing program and to fund the expansion we envision. You can invest in the future of this unique program with a tax-deductible gift through the UNF Foundation, a 501c3 public charity, by visiting our Donors page or scanning this QR code.</p>
+            </div>
+            <a href="https://give.unf.edu/joebergseminarseries">
+              <img src={donationQR} alt="Donation QR Code" className="qr-code" />
             </a>
-            <p>Joe Berg Scholars pay nothing to be members of The Joe Berg Seminars, and speakers volunteer for no compensation.  Individual and corporate donations support our work to maintain our existing program and to fund the expansion we envision. You can invest in the future of this unique program with a tax-deductible gift through the UNF Foundation, a 501c3 public charity, by visiting our Donors page or scanning this QR code.</p>
           </div>
-          <a href="https://give.unf.edu/joebergseminarseries">
-            <img src={donationQR} alt="Donation QR Code" className="qr-code" />
-          </a>
+          <h1 className="thank-you-heading">THANK YOU FOR YOUR SUPPORT!</h1>
         </section>
       </div>
       <Footer />

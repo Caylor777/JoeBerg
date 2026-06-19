@@ -34,6 +34,11 @@
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   border: 1px solid #eaeaea;
+  display: block;
+  text-align: center;
+}
+
+.donation-section-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -79,8 +84,14 @@
 
 
 @media (max-width: 600px) {
-  .donation-section {
+  .donation-section-content {
     flex-direction: column;
     text-align: center;
   }
+}
+
+.thank-you-heading {
+  text-align: center;
+  margin-top: 30px;
+  color: var(--accent);
 }
