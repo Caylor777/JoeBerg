@@ -1,12 +1,13 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import '../css/JBSfutureVision.css';
 
 function Donate() {
   return (
-    <div className="donate-page">
+    <div className="home-page">
       <Navbar />
 
-      <div className="donate-content" style={{ maxWidth: '900px', margin: '0 auto', padding: '24px' }}>
+      <div className="donate-content">
         <h1>Supporting the Joe Berg Seminars</h1>
 
         <p>
