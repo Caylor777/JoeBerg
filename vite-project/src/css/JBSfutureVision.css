@@ -7,7 +7,6 @@
 }
 
 .home-page > div:not(.Table-of-Contents) {
-  max-width: 800px;
   margin: 0 auto 40px auto;
   padding: 0 20px;
   line-height: 1.7;
@@ -37,7 +36,6 @@
 
 /* Table of Contents styling */
 .Table-of-Contents {
-  max-width: 800px;
   margin: 40px auto;
   padding: 30px;
   background-color: #f8f9fa;
