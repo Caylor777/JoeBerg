@@ -42,6 +42,7 @@
   flex-grow: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
 }
 
@@ -56,18 +57,93 @@
   line-height: 1;
 }
 
-.navbar-tabs a {
+.navbar-tabs a,
+.navbar-tabs button,
+.navbar-account-button {
   display: block;
   padding: 15px 10px;
   text-decoration: none;
   color: #333;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: 500;
+  letter-spacing: normal;
+  text-transform: none;
   white-space: nowrap;
   border-top: 2px solid transparent;
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.4;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
-.navbar-tabs a:hover {
+.navbar-tabs a:hover,
+.navbar-tabs button:hover,
+.navbar-account-button:hover {
   border-top: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+.navbar-tabs a:focus-visible,
+.navbar-tabs button:focus-visible,
+.navbar-account-button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.navbar-account-button:active {
+  transform: translateY(1px);
+}
+
+.navbar-account {
+  position: relative;
+  display: inline-flex;
+}
+
+.navbar-account-menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  padding: 4px 0;
+  min-width: 160px;
+  width: max-content;
+  z-index: 20;
+}
+
+.navbar-account-menu a,
+.navbar-account-menu-item {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 14px;
+  text-align: left;
+  background: none;
+  border: none;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  line-height: 1.4;
+}
+
+.navbar-account-menu a:hover,
+.navbar-account-menu-item:hover,
+.navbar-account-menu a:focus-visible,
+.navbar-account-menu-item:focus-visible {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.navbar-account-menu-item {
+  width: 100%;
+  text-align: left;
 }
 
 .login-modal {

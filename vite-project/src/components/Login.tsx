@@ -6,14 +6,18 @@ interface UserDatabase {
   [key: string]: string;
 }
 
-function Login() {
+interface LoginProps {
+  onLoginSuccess?: (username: string) => void;
+}
+
+function Login({ onLoginSuccess }: LoginProps) {
   // Moved testUsers into state so that when you "create" an account,
   // it actually saves for the duration of your session to test it out.
   const [testUsers,] = useState<UserDatabase>({
     user1: "password55",
   });
   const [adminUsers,] = useState<UserDatabase>({
-    "admin": "admin123",
+    admin: "admin123",
   });
   const navigate = useNavigate();
   // UI State: Toggle between Login and Create Account modes
@@ -36,10 +40,16 @@ function Login() {
       if (testUsers[username] && testUsers[username] === password) {
         setMessage(`Login Successful! Welcome back, ${username}.`);
         setIsSuccess(true);
+        localStorage.setItem('currentUser', username);
+        localStorage.setItem('loggedin', 'true');
+        onLoginSuccess?.(username);
         navigate('/account');
       } else if (adminUsers[username] && adminUsers[username] === password) {
         setMessage(`Login Successful! Welcome back, ${username}.`);
         setIsSuccess(true);
+        localStorage.setItem('currentUser', username);
+        localStorage.setItem('loggedin', 'true');
+        onLoginSuccess?.(username);
         navigate('/dashboard');
       } else {
         setMessage('Invalid username or password.');
