@@ -26,6 +26,20 @@ function JBSfutureVision() {
       <br/>
       <div className="Meeting-the-Challenges">
         <h1>Meeting the Challenges</h1>
+        <ul>To evaluate the truthfulness and the value of a particular piece of information you come across, you should ask yourself four things:
+            <li>Does the information make sense?</li>
+            <li>Does the information fit with other things you know?</li>
+            <li>Does the information have any of the hallmarks of something created by AI (6,7)? </li>
+            <li>And finally, does the source of the information have reason to want to mislead you?</li>
+        </ul>
+        <p>Only then should you use it to make decisions for yourself, your family, and your society. To apply this simple form of critical thinking effectively, you need to know the background around the information's claim, and if you don't know it, be willing to learn about it. Unfortunately, many people don't do this. In some cases, this is because it does fit with things they believe, as they have become immersed in a culture filled with mis- and disinformation. In other cases, it is because they don't have the time or don't know how to learn about it. Either way, this can cause problems not only for those individuals and their families, but for the larger society, and this is one of the major challenges facing us today.</p>
+        <br/>
+        <p>The type of critical thinking described above is especially important for present and future leaders because they will be the ones making decisions about how to deal with the challenges laid out in the previous section. They will have to learn as much as they can about each challenge and confront it with clear, unbiased, and critical eyes. But because those challenges and how they are dealt with will affect every living thing on this planet in some way, directly or indirectly, it is important that the citizens of tomorrow, who will empower the leaders in one way or another, do so as well. And both the leaders and the citizens of the future must do this with empathy for others, understanding that their decisions have implications for the larger world beyond their own community. The decisions they make tomorrow - and the decisions we make today - will determine what kind of future we and our descendants can look forward to.</p>
+        <br/>
+        <p>On the following pages, we present a vision for a program that we believe will help to ensure that the young people of today - the leaders and citizens of tomorrow - will have the love of learning and the critical thinking skills to be up to the daunting task outlined above. It starts with the evening seminar program for gifted high school students that has been in operation in Jacksonville since 1960, when local businesspersons and school officials established it based on a model spread around the country by the Joe Berg Foundation.</p>
+        <ol>
+            <li></li>
+        </ol>
       </div>
       <Footer />
     </div>

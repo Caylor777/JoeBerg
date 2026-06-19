@@ -87,6 +87,7 @@
   background-color: rgb(238, 238, 238);
   padding: 40px;
   border-radius: 12px;
+  border: 1px solid #eaeaea;
   position: relative;
   width: 100%;
   max-width: 400px;
