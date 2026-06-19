@@ -23,6 +23,10 @@ function JBSfutureVision() {
             <li>Bontridder, Noémi, and Yves Poullet. “The Role of Artificial Intelligence in Disinformation.” Data & Policy 3 (January 2021): e32. <a href="https://doi.org/10.1017/dap.2021.20">https://doi.org/10.1017/dap.2021.20</a>.</li>
         </ol>
       </div>
+      <br/>
+      <div className="Meeting-the-Challenges">
+        <h1>Meeting the Challenges</h1>
+      </div>
       <Footer />
     </div>
   );
