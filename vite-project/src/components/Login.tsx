@@ -10,8 +10,10 @@ function Login() {
   // Moved testUsers into state so that when you "create" an account,
   // it actually saves for the duration of your session to test it out.
   const [testUsers,] = useState<UserDatabase>({
-    admin: "admin123",
     user1: "password55",
+  });
+  const [adminUsers,] = useState<UserDatabase>({
+    "admin": "admin123",
   });
   const navigate = useNavigate();
   // UI State: Toggle between Login and Create Account modes
@@ -35,6 +37,10 @@ function Login() {
         setMessage(`Login Successful! Welcome back, ${username}.`);
         setIsSuccess(true);
         navigate('/account');
+      } else if (adminUsers[username] && adminUsers[username] === password) {
+        setMessage(`Login Successful! Welcome back, ${username}.`);
+        setIsSuccess(true);
+        navigate('/dashboard');
       } else {
         setMessage('Invalid username or password.');
         setIsSuccess(false);

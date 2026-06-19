@@ -6,7 +6,7 @@ import './index.css'
 import Home from './pages/Home.tsx';
 import JBSfutureVision from './pages/JBSfutureVision.tsx';
 import Account from './pages/Account.tsx';
-
+import Dashboard from './pages/Dashboard.tsx';
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
@@ -14,6 +14,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/" element={<Home />} />
         <Route path="/JBS-Future-Vision" element={<JBSfutureVision />} />
         <Route path="/account" element={<Account />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
