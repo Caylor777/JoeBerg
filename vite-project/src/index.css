@@ -21,8 +21,8 @@
   color-scheme: light;
   color: var(--text);
   background-color: var(--bg);
-  background-image: radial-gradient(circle, var(--dot) 1.5px, transparent 1.5px);
-  background-size: 25px 25px;
+  background-image: radial-gradient(circle, var(--dot) 1.2px, transparent 1.2px);
+  background-size: 20px 20px;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
