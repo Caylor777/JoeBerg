@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 import '../css/JBSfutureVision.css';
+import bergPlanCollageImage from '/berg-plan-collage.png';
 
 function JoeBergSeminarStory() {
   return (
@@ -33,7 +34,7 @@ function JoeBergSeminarStory() {
         </p>
         <Link to="/berg-plan" className="image-link">
           <img
-            src="/berg-plan-collage.png"
+            src={bergPlanCollageImage}
             alt="The Berg Plan collage"
             className="story-image"
           />
