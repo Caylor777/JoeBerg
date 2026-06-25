@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../css/Navbar.css';
 import { useNavigate } from 'react-router-dom';
+import bannerImage from '/banner.png';
 import Login from './Login';
 
 function Navbar() {
@@ -33,7 +34,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-banner">
         <Link to="/">
-          <img src="/banner.png" alt="Joe Berg Banner" />
+          <img src={bannerImage} alt="Joe Berg Banner" />
         </Link>
       </div>
       <ul className="navbar-tabs">
