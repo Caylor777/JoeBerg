@@ -6,6 +6,7 @@ import './index.css'
 import Home from './pages/Home.tsx';
 import Donate from './pages/Donate.tsx';
 import JBSfutureVision from './pages/JBSfutureVision.tsx';
+import JoeBergSeminarStory from './pages/JoeBergSeminarStory.tsx';
 import Account from './pages/Account.tsx';
 import Dashboard from './pages/Dashboard.tsx';
 
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/" element={<Home />} />
         <Route path="/donate" element={<Donate />} />
         <Route path="/JBS-Future-Vision" element={<JBSfutureVision />} />
+        <Route path="/joe-berg-story" element={<JoeBergSeminarStory />} />
         <Route path="/account" element={<Account />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="*" element={<Home />} />

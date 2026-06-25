@@ -119,9 +119,37 @@
   word-break: break-all;
 }
 
+/* Story page image styling */
+.story-section {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.story-image {
+  display: block;
+  width: 100%;
+  max-width: 860px;
+  margin: 24px auto;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.image-link {
+  display: block;
+  text-align: center;
+}
+
+.story-section strong {
+  display: block;
+  margin-bottom: 1.2em;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .Table-of-Contents ol {
     columns: 1;
+  }
+  .story-section {
+    padding: 0 10px;
   }
 }
