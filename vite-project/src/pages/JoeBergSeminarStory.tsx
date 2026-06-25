@@ -33,7 +33,7 @@ function JoeBergSeminarStory() {
         </p>
         <Link to="/berg-plan" className="image-link">
           <img
-            src="/berg-plan-collage_1.png"
+            src="/berg-plan-collage.png"
             alt="The Berg Plan collage"
             className="story-image"
           />

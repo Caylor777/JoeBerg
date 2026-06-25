@@ -40,7 +40,7 @@ function Navbar() {
         <li><Link to="/JBS-Future-Vision">JBS Future Vision</Link></li>
         <li><a href="#calendar">Seminar Calendar</a></li>
         <li><Link to="/joe-berg-story">The Joe Berg Seminars Story</Link></li>
-        <li><a href="#guidelines">Guidelines for Participation</a></li>
+        <li><Link to="/guidelines">Guidelines for Participation</Link></li>
         <li>
           {!isLoggedIn ? (
             <button
