@@ -33,7 +33,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-banner">
-        <Link to="/">
+        <Link to="/JoeBerg">
           <img src={bannerImage} alt="Joe Berg Banner" />
         </Link>
       </div>
