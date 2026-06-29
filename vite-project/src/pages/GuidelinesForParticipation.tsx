@@ -8,12 +8,12 @@ function GuidelinesForParticipation() {
     <div className="home-page">
       <Navbar />
 
-      <div className="story-section">
+      <div className="JBS-Future-Vision">
         <h1>Guidelines for Participation</h1>
         <h3>A summary of expectations and opportunities as a Joe Berg Scholar</h3>
-
-        <ul>
-          <li>
+      </div>
+      <div className="guidelines-section">
+        <ul><li>
             <strong>Eligibility and membership:</strong> You must be nominated by a school
             counselor, teacher, or administrator to take the Joe Berg Seminars qualifying
             exam. You cannot apply directly to us, but you may ask one of those folks to
@@ -45,8 +45,9 @@ function GuidelinesForParticipation() {
           spring semester of your sophomore year until the fall semester of your senior year
           (seminars will not — usually — be held during the summer). Your graduation ceremony
           will generally occur in January of your senior year of high school.
-        </p>
+        </p></div>
 
+      <div className="guidelines-section">
         <h2>Seminars</h2>
         <p>
           There will typically be seven (7) seminars for the Science track and seven (7)
@@ -72,7 +73,8 @@ function GuidelinesForParticipation() {
           Rest assured that Joe Berg Staff will not leave until all Scholars have been picked up,
           but please be ready to pick up your Scholar no later than 8:35 PM.
         </p>
-
+      </div>
+      <div className="guidelines-section">
         <h2>Seminar types</h2>
         <ul>
           <li>
@@ -98,7 +100,8 @@ function GuidelinesForParticipation() {
             can make up for missing a required seminar.
           </li>
         </ul>
-
+      </div>
+      <div className="guidelines-section">
         <h2>Maintaining membership</h2>
         <p>
           <strong>70/50 Attendance Requirement:</strong> You must attend a number of seminars equivalent to
@@ -124,14 +127,16 @@ function GuidelinesForParticipation() {
           two-year tenure as a Joe Berg Scholar. Those that you miss can be offset by attending Bonus seminars.
           However, be aware that if you do not attend at least 50% of the seminars offered per semester and 70% overall,
           you will not graduate.
-        </p>
+        </p></div>
 
+      <div className="guidelines-section">
         <h2>Grade point average</h2>
         <p>
           You must maintain a 3.0 grade point average on academic subjects. Scholarship may be reviewed at the end of
           each grading period.
-        </p>
+        </p></div>
 
+      <div className="guidelines-section">
         <h2>Behavior during seminars</h2>
         <p>
           We expect you to be punctual and courteous at the meetings. Check in and be ready for the seminar by 6:55 PM.
@@ -151,7 +156,8 @@ function GuidelinesForParticipation() {
         <p>
           Repeated violation of any of these rules may lead to dismissal from the Joe Berg Seminars.
         </p>
-
+      </div>
+      <div className="guidelines-section">
         <h2>Holidays and exam schedules</h2>
         <p>
           The seminars offer valuable experiences that are wasted if you do not attend. Participation in Joe Berg requires
@@ -159,8 +165,9 @@ function GuidelinesForParticipation() {
           around the holidays and exam schedules of the Scholars' schools. Because Scholars come from a mix of public and
           private schools, it is difficult to avoid all of the holidays and exams of all of the schools. Therefore,
           careful planning is needed by students and parents to make sure the minimum attendance requirements will be met.
-        </p>
+        </p></div>
 
+      <div className="guidelines-section">
         <h2>Be responsible</h2>
         <p>
           Make sure you are aware of upcoming seminars and other opportunities. Consult the{' '}
@@ -174,8 +181,9 @@ function GuidelinesForParticipation() {
         <p>
           If for some reason you are not receiving our email updates, please check your email client’s spam filter in your
           settings and advise us in person, providing us with your correct email addresses.
-        </p>
+        </p></div>
 
+      <div className="guidelines-section">
         <h2>Communication</h2>
         <p>
           <strong>All communication will be by email.</strong> We will not use texting of any kind. Therefore, please notify us immediately at{' '}
@@ -186,7 +194,8 @@ function GuidelinesForParticipation() {
         <p>
           Parents are welcome to attend seminars with you (if space permits) unless visitors have been specifically prohibited.
         </p>
-
+      </div>
+      <div className="guidelines-section">
         <h2>Volunteering</h2>
         <p>
           We encourage all Joe Berg Scholars to participate in volunteer and community service.
@@ -211,7 +220,6 @@ function GuidelinesForParticipation() {
           Please bring all necessary documentation for Joe Berg staff to sign for community service credit.
         </p>
       </div>
-
       <Footer />
     </div>
   );
