@@ -1,6 +1,6 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import '../css/JBSfutureVision.css';
+import '../css/TextPages.css';
 
 function Donate() {
   return (
