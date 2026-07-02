@@ -9,7 +9,7 @@ function JoeBergSeminarStory() {
     <div className="home-page">
       <Navbar />
 
-      <div className="story-section">
+      <div className="JBS-Future-Vision">
         <h1>The Joe Berg Seminars Story</h1>
         <p>
           Way back in the 1950s, Chicago trucking equipment manufacturer Joseph Berg
