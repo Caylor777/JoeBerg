@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Noto+Sans+Mono:wght@100..900&display=swap');
+
+.navbar {
+  font-family: 'Google Sans Flex', sans-serif;
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navbar-banner {
+  width: 100%;
+  overflow: visible;
+  margin-bottom: 0;
+}
+
+.navbar-banner img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.navbar-banner img:hover {
+  transform: scale(1.03); /* Grows the image to 103% of its original size */
+}
+
+.navbar-tabs {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid var(--border);
+  border-width: 2px;
+  border-radius: 2px;
+  min-height: 46px;
+}
+
+.navbar-tabs li {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.navbar-tabs li:not(:first-child)::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--border);
+  font-size: 24px;
+  line-height: 1;
+}
+
+.navbar-tabs a,
+.navbar-tabs button,
+.navbar-account-button {
+  display: block;
+  padding: 10px 10px;
+  text-decoration: none;
+  color: #333;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  background: none;
+  border: none;
+  border-top: 2px solid transparent;
+  cursor: pointer;
+  line-height: 1.4;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.navbar-tabs a:hover,
+.navbar-tabs button:hover,
+.navbar-account-button:hover {
+  border-top: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+.navbar-tabs a:focus-visible,
+.navbar-tabs button:focus-visible,
+.navbar-account-button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.navbar-account-button:active {
+  transform: translateY(1px);
+}
+
+.navbar-account {
+  position: relative;
+  display: inline-flex;
+}
+
+.navbar-account-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  padding: 0;
+  min-width: 160px;
+  width: max-content;
+  z-index: 20;
+}
+
+.navbar-account-menu a,
+.navbar-account-menu-item {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 14px;
+  text-align: left;
+  background: none;
+  border: none;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  line-height: 1.4;
+}
+
+.navbar-account-menu a:hover,
+.navbar-account-menu-item:hover,
+.navbar-account-menu a:focus-visible,
+.navbar-account-menu-item:focus-visible {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.navbar-account-menu-item {
+  width: 100%;
+  text-align: left;
+}
+
+.login-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.login-form {
+  background-color: rgb(238, 238, 238);
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid #eaeaea;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form > button {
+  position: absolute; 
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: red;
+  transition: color 0.2s ease;
+}
+
+.login-form > button:hover {
+  color: darkred;
+}

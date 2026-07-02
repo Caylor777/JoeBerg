@@ -1,0 +1,73 @@
+/* Account page styles moved from inline styles */
+
+.account-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.account-layout {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.account-left {
+  flex: 2;
+  background-color: white;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+}
+
+.account-right {
+  flex: 1;
+  min-width: 220px;
+}
+
+.account-card {
+  border: 1px solid #e6e6e6;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  background-color: white;
+}
+
+.account-card h3 {
+  margin-top: 0;
+}
+
+.account-input {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+}
+
+.account-button {
+  padding: 8px 12px;
+}
+
+.account-msg-success {
+  color: green;
+}
+
+.account-msg-error {
+  color: red;
+}
+
+.account-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.account-table th,
+.account-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #eaeaea;
+  text-align: left;
+}
+
+.account-note {
+  margin-top: 18px;
+}
