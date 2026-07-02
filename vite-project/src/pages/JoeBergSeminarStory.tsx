@@ -32,13 +32,13 @@ function JoeBergSeminarStory() {
           Foundation, a photograph of Joseph Berg, and the symbol and motto of the Joe
           Berg Foundation.
         </p>
-        <Link to="/berg-plan" className="image-link">
+        <a href="https://www.joeberg.org/uploads/5/7/0/8/57081557/the_berg_plan_1.pdf" className="image-link">
           <img
             src={bergPlanCollageImage}
             alt="The Berg Plan collage"
             className="story-image"
           />
-        </Link>
+        </a>
         <p>
           <strong>
             For a bit of 1950s nostalgia, click on the image to download a copy of the
@@ -47,9 +47,9 @@ function JoeBergSeminarStory() {
           </strong>
         </p>
         <p>
-          <Link to="/historical-files">
+          <a href="https://www.joeberg.org/uploads/5/7/0/8/57081557/opportunity_for_the_brilliant_science_student_-_readers_digest_august_1958_opt.pdf">
             Other historical documents can be found in Joe Berg Historical Files.
-          </Link>
+          </a>
         </p>
 
         <p>
@@ -57,7 +57,7 @@ function JoeBergSeminarStory() {
           Berg Plan and introduced the concept to the Duval County School Board. The
           school board adopted it, but modified the original concept so that seminars
           were offered without after-seminar advising. This made the program available
-          to gifted science students in a majority of the county’s public schools,
+          to gifted science students in a majority of the county's public schools,
           broadening the reach while lessening the intensity of the program.
         </p>
         <p>
