@@ -39,4 +39,5 @@
   color: #666;
   font-size: 0.9rem;
   margin: 0;
+  text-align: center; /* Ensure this is always centered */
 }
