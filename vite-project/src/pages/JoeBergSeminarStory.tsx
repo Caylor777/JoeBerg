@@ -3,6 +3,7 @@ import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 import '../css/TextPages.css';
 import bergPlanCollageImage from '/berg-plan-collage.png';
+import links from '../components/Links';
 
 function JoeBergSeminarStory() {
   return (
@@ -106,8 +107,8 @@ function JoeBergSeminarStory() {
         </p>
 
         <p>
-          <Link to="/obituary">
-            Joe Berg’s obituary, published in the New York Times on July 8, 1964,
+          <Link to= {links.obituary} >
+            Joe Berg's obituary, published in the New York Times on July 8, 1964,
           </Link>
           stated that the Joe Berg Foundation had established more than 700 science seminar
           programs in the US and Canada. Today there remain only our program and one other
@@ -116,7 +117,7 @@ function JoeBergSeminarStory() {
         </p>
 
         <p>
-          With luck and support (<Link to="/donate">please make a donation if you are able</Link>), perhaps one day the Joe Berg
+          With luck and support (<Link to={links.donate}>please make a donation if you are able</Link>), perhaps one day the Joe Berg
           Seminars experience will once again become available throughout the country.
           Maybe even, throughout the world?
         </p>

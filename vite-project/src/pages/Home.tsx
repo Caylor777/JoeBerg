@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 
 import donationQR from '/DonationQR.svg';
 
+import links from '../components/Links'
+
 function Home() {
   return (
     <div className="home-page">
@@ -18,7 +20,7 @@ function Home() {
         <section className="donation-section">
           <div className="donation-section-content">
             <div className="donation-text">
-              <Link to="/donate">
+              <Link to= {links.donate} >
                 <h2>Support us with your tax-deductible donation!</h2>
               </Link>
               <p>Joe Berg Scholars pay nothing to be members of The Joe Berg Seminars, and speakers volunteer for no compensation.  Individual and corporate donations support our work to maintain our existing program and to fund the expansion we envision. You can invest in the future of this unique program with a tax-deductible gift through the UNF Foundation, a 501c3 public charity, by visiting our Donors page or scanning this QR code.</p>

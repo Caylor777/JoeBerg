@@ -16,12 +16,12 @@ createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/donate" element={<Donate />} />
-        <Route path="/JBS-Future-Vision" element={<JBSfutureVision />} />
-        <Route path="/joe-berg-story" element={<JoeBergSeminarStory />} />
-        <Route path="/guidelines" element={<GuidelinesForParticipation />} />
-        <Route path="/account" element={<Account />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="JoeBerg/donate" element={<Donate />} />
+        <Route path="JoeBerg/JBS-Future-Vision" element={<JBSfutureVision />} />
+        <Route path="JoeBerg/joe-berg-story" element={<JoeBergSeminarStory />} />
+        <Route path="JoeBerg/guidelines" element={<GuidelinesForParticipation />} />
+        <Route path="JoeBerg/account" element={<Account />} />
+        <Route path="JoeBerg/dashboard" element={<Dashboard />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>

@@ -3,6 +3,8 @@ import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 import '../css/TextPages.css';
 
+import links from '../components/Links'
+
 function GuidelinesForParticipation() {
   return (
     <div className="home-page">
@@ -58,10 +60,10 @@ function GuidelinesForParticipation() {
           Seminars are currently held on the University of North Florida campus
           (<a href="https://maps.unf.edu" target="_blank" rel="noreferrer">maps.unf.edu</a>).
           The exact location can vary, so check your email and the{' '}
-          <Link to="/seminar-calendar">Seminar Calendar</Link> to be sure of the location.
+          <Link to= {links.seminarCalendar} >Seminar Calendar</Link> to be sure of the location.
           Check-in for seminars normally begins at 6:30 PM. The seminar normally begins at
           7:00 PM and is over by 8:30 PM. You will be notified by email and in the{' '}
-          <Link to="/seminar-calendar">Seminar Calendar</Link> if there are any changes.
+          <Link to= {links.seminarCalendar} >Seminar Calendar</Link> if there are any changes.
         </p>
         <p>
           <strong>Important:</strong> These are college-level seminars. Be ready to have your
@@ -81,7 +83,7 @@ function GuidelinesForParticipation() {
             <strong>In-track seminars</strong> — required seminars in Science (usually held on Tuesdays)
             or Humanities (usually held on Thursdays) and are intended for Scholars registered in those
             Joe Berg tracks. Sometimes these days might be switched due to speaker availability, but this
-            will be indicated in the <Link to="/seminar-calendar">Seminar Calendar</Link>.
+            will be indicated in the <Link to= {links.seminarCalendar} >Seminar Calendar</Link>.
             There are no excused absences (except in extremely extenuating circumstances with documentation),
             but see Bonus seminars below. If you are interested enough in a seminar in the other track to
             attend it, you may do so for credit.
@@ -90,7 +92,7 @@ function GuidelinesForParticipation() {
             <strong>Xtrack seminars</strong> — seminars on topics that bridge across the two tracks and
             are required for both Science and Humanities Scholars. Xtrack seminars are held on Tuesday or
             Thursday, depending on speaker preference, on the dates indicated in the{' '}
-            <Link to="/seminar-calendar">Seminar Calendar</Link>. There are no excused absences
+            <Link to= {links.seminarCalendar} >Seminar Calendar</Link>. There are no excused absences
             (except in extremely extenuating circumstances with documentation) but see Bonus seminars below.
           </li>
           <li>
@@ -171,7 +173,7 @@ function GuidelinesForParticipation() {
         <h2>Be responsible</h2>
         <p>
           Make sure you are aware of upcoming seminars and other opportunities. Consult the{' '}
-          <Link to="/seminar-calendar">Seminar Calendar</Link> for advance planning, and we will remind you of each
+          <Link to= {links.seminarCalendar}>Seminar Calendar</Link> for advance planning, and we will remind you of each
           upcoming seminar in the days leading up to it with an email sent to the email addresses you provide us.
         </p>
         <p>

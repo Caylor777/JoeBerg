@@ -2,6 +2,8 @@ import { useState } from 'react';
 import type { SyntheticEvent } from 'react';
 import '../css/Login.css';
 import { useNavigate } from 'react-router-dom';
+
+import links from './Links';
 interface UserDatabase {
   [key: string]: string;
 }
@@ -41,12 +43,12 @@ function Login({ onLoginSuccess }: LoginProps) {
         setMessage(`Login Successful! Welcome back, ${username}.`);
         setIsSuccess(true);
         onLoginSuccess?.(username);
-        navigate('/account');
+        navigate(links.account);
       } else if (adminUsers[username] && adminUsers[username] === password) {
         setMessage(`Login Successful! Welcome back, ${username}.`);
         setIsSuccess(true);
         onLoginSuccess?.(username);
-        navigate('/dashboard');
+        navigate(links.dashboard);
       } else {
         setMessage('Invalid username or password.');
         setIsSuccess(false);

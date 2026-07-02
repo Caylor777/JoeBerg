@@ -5,6 +5,8 @@ import { useNavigate } from 'react-router-dom';
 import bannerImage from '/banner.png';
 import Login from './Login';
 
+import links from './Links';
+
 function Navbar() {
   const navigate = useNavigate();
   const [isLoginOpen, setIsLoginOpen] = useState(false);
@@ -33,15 +35,16 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-banner">
-        <Link to="/JoeBerg">
+        <Link to={links.home}>
           <img src={bannerImage} alt="Joe Berg Banner" />
         </Link>
       </div>
       <ul className="navbar-tabs">
-        <li><Link to="/JBS-Future-Vision">JBS Future Vision</Link></li>
+        <li><Link to={links.futureVision}>JBS Future Vision</Link></li>
         <li><a href="#calendar">Seminar Calendar</a></li>
-        <li><Link to="/joe-berg-story">The Joe Berg Seminars Story</Link></li>
-        <li><Link to="/guidelines">Guidelines for Participation</Link></li>
+        <li><Link to={links.joeBergStory}>The Joe Berg Seminars Story</Link></li>
+        <li><Link to={links.guidelines}>Guidelines for Participation</Link></li>
+        <li><Link to={links.donate}>Donate</Link></li>
         <li>
           {!isLoggedIn ? (
             <button
@@ -62,7 +65,7 @@ function Navbar() {
               </button>
               {isAccountMenuOpen && (
                 <div className="navbar-account-menu">
-                  <Link to="/account" onClick={() => setIsAccountMenuOpen(false)}>
+                  <Link to={links.account} onClick={() => setIsAccountMenuOpen(false)}>
                     Account
                   </Link>
                   <button type="button" className="navbar-account-menu-item" onClick={handleLogout}>
