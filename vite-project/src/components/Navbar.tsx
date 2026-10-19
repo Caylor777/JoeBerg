@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../css/Navbar.css';
 import { useNavigate } from 'react-router-dom';
-import bannerImage from '/banner.png';
+import bannerImage from '/newbanner.webp';
 import Login from './Login';
 
 import links from './Links';
